@@ -7,7 +7,7 @@
 dependencies:
     ios_keychain:
         git:
-            url: git://github.com/ahmeteminkara/ios_keychain.git
+            url: git://github.com/ahmeteminkara/IOSKeychain.git
 ```
 
 ```dart
