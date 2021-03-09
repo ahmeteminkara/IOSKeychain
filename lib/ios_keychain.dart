@@ -17,7 +17,7 @@ class IOSKeychain {
     return await _channel.invokeMethod('writeKey', {"key": key, "value": value});
   }
 
-  static Future<bool> remove(String key, String value) async {
+  static Future<bool> remove(String key) async {
     return await _channel.invokeMethod('removeKey', {"key": key});
   }
 }

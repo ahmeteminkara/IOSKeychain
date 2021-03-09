@@ -1,15 +1,23 @@
-# ios_keychain
+# IOSKeychain
 
 A new flutter plugin project.
 
 ## Getting Started
+```yaml
+dependencies:
+    ios_keychain:
+        git:
+            url: git://github.com/ahmeteminkara/ios_keychain.git
+```
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+```dart
+import 'package:ios_keychain/ios_keychain.dart';
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+## Using
+```ruby
+String value = await IOSKeychain.read(_key);
+bool status = await IOSKeychain.write(_key, "DATA");
+bool status = await IOSKeychain.update(_key, "NEW DATA");
+bool status = await IOSKeychain.remove(_key);
+```
