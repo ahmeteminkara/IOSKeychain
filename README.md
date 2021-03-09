@@ -1,6 +1,6 @@
 # IOSKeychain
 
-A new flutter plugin project.
+>This Flutter plugin provides Keychain access on iOS
 
 ## Getting Started
 ```yaml
